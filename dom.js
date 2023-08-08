@@ -51,18 +51,31 @@
 //} 
 
 //QUERYSELECTOR
-var header =document.querySelector('#main-header');
-header.style.borderBottom ='solid 4px #ccc';
+//var header =document.querySelector('#main-header');
+//header.style.borderBottom ='solid 4px #ccc';
 
-var input=document.querySelector('input');
-input.value="WHAT DO YOU WANT"
+//var input=document.querySelector('input');
+//input.value="WHAT DO YOU WANT"
 
-var submit=document.querySelector('input[type="submit"]');
-submit.value="LAUNCH"
+//var submit=document.querySelector('input[type="submit"]');
+//submit.value="LAUNCH"
 
-var item=document.querySelector('.list-group-item');
-item.style.color='red';
+//var item=document.querySelector('.list-group-item');
+//item.style.color='red';
 
-var secondItem=document.querySelector
-('.list-group-item:nth-child(2)');
-secondItem.style.color='blue';
+//var secondItem=document.querySelector
+//('.list-group-item:nth-child(2)');
+//secondItem.style.color='blue'; 
+
+
+//QUERYSELECTORALL
+var titles=document.querySelectorAll('.title');
+console.log(titles);
+
+titles[0].textContent='MORNING STAR';
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor='green';
+}
