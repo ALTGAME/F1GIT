@@ -38,15 +38,31 @@
 
 //GETELEMENTSBYTAGNAME
 
-var li= document.getElementsByTagName('list-group-item');
-console.log(li);
-console.log(li[1]);
-li[1].textContent= 'TROLL';
-li[1].style.fontWeight= 'bold';
-li[2].style.backgroundColor='green';
+//var li= document.getElementsByTagName('list-group-item');
+//console.log(li);
+//console.log(li[1]);
+//li[1].textContent= 'TROLL';
+//li[1].style.fontWeight= 'bold';
+//li[2].style.backgroundColor='green';
 
 
-for(var i=0;i<li.length;i++){
-    li[i].style.fontWeight= 'bold';
-} 
+//for(var i=0;i<li.length;i++){
+  //  li[i].style.fontWeight= 'bold';
+//} 
 
+//QUERYSELECTOR
+var header =document.querySelector('#main-header');
+header.style.borderBottom ='solid 4px #ccc';
+
+var input=document.querySelector('input');
+input.value="WHAT DO YOU WANT"
+
+var submit=document.querySelector('input[type="submit"]');
+submit.value="LAUNCH"
+
+var item=document.querySelector('.list-group-item');
+item.style.color='red';
+
+var secondItem=document.querySelector
+('.list-group-item:nth-child(2)');
+secondItem.style.color='blue';
